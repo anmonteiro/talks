@@ -1,0 +1,19 @@
+[{:db/id #db/id[:db.part/user -1]
+  :address/street "Bradford Street"
+  :address/zip "01060"
+  :address/number 4}
+
+ {:db/id #db/id[:db.part/user -2]
+  :address/street "Kendall Road"
+  :address/zip "01054"
+  :address/number 25}
+ 
+ {:db/id #db/id[:db.part/user -3]
+  :person/name "Bob Smith"
+  :person/age 35
+  :person/address #db/id[:db.part/user -1]}
+
+ {:db/id #db/id[:db.part/user -4]
+  :person/name "Mary Brown"
+  :person/age 30
+  :person/address #db/id[:db.part/user -2]}]
