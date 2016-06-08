@@ -1,0 +1,34 @@
+[{:db/id #db/id[:db.part/db]
+  :db/ident :note/title
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A note's title"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :note/content
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A note's content"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :note/authors
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/doc "A note's authors"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :user/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A user's name"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :user/notes
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/doc "An user's notes"
+  :db.install/_attribute :db.part/db}]

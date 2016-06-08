@@ -1,0 +1,10 @@
+
+[{:db/id #db/id[:db.part/user -2]
+  :note/title "Some note"
+  :note/content "The note's content"
+  :note/authors #db/id[:db.part/user -1]}
+ {:db/id #db/id[:db.part/user -1]
+  :user/name "Alice Brown"
+  :user/notes [#db/id[:db.part/user -2]]}
+ ]
+
