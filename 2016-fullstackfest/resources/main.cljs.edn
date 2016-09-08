@@ -1,0 +1,4 @@
+{:require [fullstackfest-demo.core fullstackfest-demo.tests]
+ :init-fns [fullstackfest-demo.core/init!]
+ ;:compiler-options {:asset-path "main.out"}
+ }
